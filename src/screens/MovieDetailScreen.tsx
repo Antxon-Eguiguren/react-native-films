@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-export const FilmDetailScreen = () => {
+export const MovieDetailScreen = () => {
   return (
     <View>
-      <Text>Film Detail</Text>
+      <Text>Movie Detail</Text>
     </View>
   );
 };
