@@ -10,14 +10,14 @@ interface MoviesState {
 }
 
 export const useMovies = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<any>(null);
   const [moviesState, setMoviesState] = useState<MoviesState>({
     nowPlaying: [],
     popular: [],
     topRated: [],
     upcoming: [],
   });
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [error, setError] = useState<any>(null);
 
   const getMovies = async () => {
     try {

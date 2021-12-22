@@ -49,7 +49,7 @@ export const HomeScreen = () => {
 
         {isLoading && (
           <View style={styles.loading}>
-            <ActivityIndicator color="red" size={100} />
+            <ActivityIndicator color="grey" size={35} />
           </View>
         )}
 
